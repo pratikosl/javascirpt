@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 3</title>
+</head>
+
+<body>
+  <h2>Document</h2>
+  <div id="myDiv">
+    <p>Click the button to change the background color.</p>
+    <button onclick="colorChange()">Change Color</button>
+  </div>
+  <script>
+    //creating a variable named as div which got id "myDiv" of div
+    let div = document.getElementById("myDiv");
+    // changing color of the div which on getting called converts background color of div to red
+    function color(div) {
+      div.style.backgroundColor = "red";
+    }
+    //calling the color function
+    color(div);
+    //creating a colorChange() function which works when button is clicked 
+    function colorChange() {
+      let bttn = document.getElementById("myDiv");
+      //changing the background color of div when button is clicked
+      bttn.style.backgroundColor = "blue";
+    }
+  </script>
+</body>
+
+</html>

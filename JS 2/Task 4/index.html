@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Building Interactivity with DOM Manipulation</title>
+</head>
+
+<body>
+  <ul id="myList">
+  </ul>
+  <!-- creating a button, which on getting clicked  prompt to add item in the list-->
+  <button onclick="addItem()">Add Item</button>
+  <!--Creating a button, which on getting clicked remove first list item from the unordered list-->
+  <button onclick="removeFirstChild()">Remove First Item</button>
+  <script>
+    //initializing a function with name addItem() which 
+    //will get executed when the button addItem is clicked.
+    function addItem() {
+      //initialising a prompt to get item which is to be added in the unordered list
+      let name = prompt("Enter a item :");
+      //getting unordered list by its id "myList"
+      let List = document.getElementById("myList");
+      //creating an list
+      let listItem = document.createElement("li");
+      //assigning the content to the list
+      listItem.textContent = name;
+      //adding the content to the list
+      List.appendChild(listItem);
+    }
+
+    //initialising a function named as removeFirstChild() to remove the first child 
+    function removeFirstChild() {
+      //selecting the unordered list by id
+      let myList = document.getElementById("myList");
+      //removig the first child with tag name "li" and position at index [0]
+      myList.removeChild(myList.getElementsByTagName("li")[0]);
+    }
+  </script>
+</body>
+
+</html>

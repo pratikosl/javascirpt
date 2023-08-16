@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 1 </title>
+</head>
+
+<body>
+    <div>
+        <h2>Task 1 : Data Type</h2>
+        <script>
+            //Declaring a variable named as number whose data type is number.
+            let number = 10;
+
+            //Declaring a variable named as name1 and name2 whose data type is string.
+            let name1 = "bhopal";
+            let name2 = 'Indore';
+
+            //Declaring a variable named as num whose data type is boolean.
+            let num = true;
+
+            //Declaring a variable names as arr whose datatype is array
+            const arr = ["bhopal", "Indore"];
+
+            //Declaring a variable named as undef whose data type is undefined.
+            let undef;
+
+            //Declaring a variable named as bInt whose data type is Bigint.
+            let bInt = BigInt("20234534");
+
+            //Declaring a variable named as obj whose data type is object.
+            const obj = {
+                name: "abc", age: 42, car: "volvo"
+            };
+
+            //Declaring a variable named as n whose data type is null.
+            let n = null;
+        </script>
+    </div>
+
+    <div>
+        <h2>Loop : while and for </h2>
+        <script>
+            //while loop for displaying numbers from 1 to 10.
+            let i = 1;
+            while (i <= 10) {
+                console.log(i);
+                i++;
+            }
+
+
+            //for loop to calculate sum of numbers of 1 to 100.
+            sum = 0;
+            for (let i = 1; i <= 100; i++) {
+                sum += i;
+            }
+            console.log(sum);
+        </script>
+    </div>
+    <div>
+        <h2>Task 3 :The "switch" Statement</h2>
+        <script>
+            let currDay;
+            switch (new Date().getDay() + 1) {
+                case 1:
+                    currDay = "Sunday";
+                    break;
+
+                case 2:
+                    currDay = "Monday";
+                    break;
+
+                case 3:
+                    currDay = "Tuesday";
+                    break;
+
+                case 4:
+                    currDay = "Wednesday";
+                    break;
+
+                case 5:
+                    currDay = "Thursday";
+                    break;
+
+                case 6:
+                    currDay = "Friday";
+                    break;
+
+                case 7:
+                    currDay = "Saturday";
+
+            }
+            console.log(currDay);
+        </script>
+    </div>
+
+    <div>
+        <h2>Task:4 Functions</h2>
+        <script>
+            let area = 0;
+            function calcArea(lgth, wdth) {
+                area = lgth * wdth;
+                return area;
+            }
+            let lgth = 4;
+            let wdth = 6;
+            let rectArea = calcArea(lgth, wdth);
+            console.log(rectArea);
+        </script>
+    </div>
+
+    <div>
+        <h2>Task 4: Conditional Statement</h2>
+        <script>
+            let x = prompt("Enter a number for conditional statement :");
+            if (x < 0) {
+                console.log("The number you entered is LESS than zero or negative");
+            }
+            else if (x > 0) {
+                console.log("The number you entered is GREATER than zero or positive");
+            }
+            else {
+                console.log("the number you entered is EQUALS to zero");
+            }
+        </script>
+    </div>
+    <div>
+        <h2>Task 5: Loops</h2>
+        <!-- Displaying the even numbers from 1 to 20 -->
+        <script>
+            for (let i = 1; i <= 20; i++) {
+                if (i % 2 == 0) {
+                    console.log(i);
+                }
+            }
+        </script>
+
+        <!--Displaying the factorial of a number-->
+        <script>
+            let z = 7;
+            let factorial = 1;
+            for (let i = z; i > 0; i--) {
+                factorial *= i;
+            }
+            console.log(factorial);
+        </script>
+    </div>
+</body>
+
+</html>
